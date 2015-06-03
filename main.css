@@ -1,0 +1,82 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	white-space: nowrap;
+	overflow: hidden;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display: flex;
+	height: 100%;
+}
+
+.left-col {
+	background-color: #F5F5F5;
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+	border-right: 1px solid lightgrey;
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  	page-break-inside: avoid; /* Firefox */
+   	break-inside: avoid; /* IE 10+ */
+	min-height: 100vh;
+	margin-bottom: -2px;
+}
+
+.mid-col {
+	position: relative;
+	display: inline-block;
+	width: 75%;
+}
+
+.right-col {
+	background-color: #F5F5F5;
+	width: 5%;
+}
+
+.title {
+	text-align: center;
+	background-color: lightgrey;
+	height: 40px;
+	padding-top: 20px;
+	margin-top: 0;
+	margin-bottom: -15px;
+}
+
+.tab-area {
+	background-color: #F5F5F5;
+}
+
+.greeting {
+	padding: 0 0 10px 0;
+	font-weight: bold;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid lightgray;
+}
+
+.tabs {
+	background-color: #F5F5F5;
+}
+
+.links {
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+.links a {
+	text-decoration: none;
+	color: black;
+}
+
+.links li {
+	padding-bottom: 15px;
+	
+}
