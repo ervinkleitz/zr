@@ -5,6 +5,8 @@
 	<title>App 3</title>
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="left-col.css">
+	<link rel="stylesheet" type="text/css" href="mid-col.css">
 </head>
 <body>
 
@@ -54,12 +56,14 @@
 			<h4>Tasks</h4>
 			<!-- nav -->
 			<nav class="tasks">
-				<a href="#" id="default">All<button>13</button></a>
-				<a href="#">Requests<button>13</button></a> 
-				<a href="#">Personal<button>0</button></a>
+				<a href="#" class="active-tab" id="all-tab">All<button>13</button></a>
+				<a href="#" class="inactive-tab" id="requests-tab">Requests<button>13</button></a> 
+				<a href="#" class="inactive-tab" id="personal-tab">Personal<button>0</button></a>
 			</nav>
 			<!-- nav -->
-			<div id="mid-col-content">
+			
+			<!-- start all tab content-->
+			<div id="all-tab-content">
 				<table class="table">
 					<tr>
 						<td class="date">12/28/06</td>
@@ -106,6 +110,12 @@
 				</table>
 				<div class="bot-option"><a href="">View All Tasks &rarr;</a></div>	
 			</div>
+			<!-- end all tab content-->
+			
+			<div id="requests-tab-content"></div> <!-- requests tab -->
+			
+			<div id="personal-tab-content"></div> <!-- personal tab -->
+			
 		</div>
 		<!-- end mid column -->
 		
@@ -116,6 +126,7 @@
 		<!-- end right column -->
 		
 	</div>
+	<!-- end container -->
 	
 	<!-- scripts -->
 	<script type="text/javascript" src="script.js"></script>
