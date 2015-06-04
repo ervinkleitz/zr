@@ -5,11 +5,14 @@
 
 .title {
 	color: darkgray;
-	background-color: #D3D3D3;
 	height: 30px;
 	padding: 18px 0 12px 0;
 	margin-top: 0;
 	margin-bottom: -2px;
+}
+
+.title, .links li:hover {
+	background-color: #D3D3D3;
 }
 
 .title, .bot-option {
@@ -25,13 +28,16 @@
 	height: 55px;
 	display: inline-block;
 	font-weight: bold;
-	border-bottom: 1px solid lightgray;
+	border-bottom: 1px solid #D3D3D3;
 	padding-top: 5px;
 }
 
 .greeting img {
-	float: left;
 	padding: 5px 30px 5px 15px;
+}
+
+.greeting img, .links img {
+	float: left;
 }
 
 .links {
@@ -51,19 +57,13 @@
 	padding: 10px 15px 10px 15px;
 }
 
-.links li:hover {
-	background-color: #D3D3D3;
-}
-
 .links a {
 	text-decoration: none;
-	color: black;
-	width: 100%;
+	color: #000000;
 }
 
 .links img {
 	padding-right: 25px;
-	float: left;
 }
 
 .links p {

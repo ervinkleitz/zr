@@ -28,11 +28,11 @@ a {
 	width: 20%;
 	vertical-align: top;
 	border-right: 1px solid #D3D3D3;
-	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  	page-break-inside: avoid; /* Firefox */
-   	break-inside: avoid; /* IE 10+ */
 	min-height: 100vh;
 	margin-bottom: -2px;
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  		page-break-inside: avoid; /* Firefox */
+   		break-inside: avoid; /* IE 10+ */
 }
 
 .mid-col {

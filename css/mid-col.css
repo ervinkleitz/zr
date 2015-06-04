@@ -35,11 +35,12 @@
 }
 
 .active-tab button, .tasks a:hover button{
+	text-decoration: none;
 	color: #FFA500;
 }
 
 .tasks a {
-	padding: 0 10px 0 10px;
+	padding: 0 10px 0 15px;
 }
 
 .tasks button {
@@ -123,7 +124,8 @@
 }
 /****** end dropdown styles ******/
 
-#all-tab-content {
+/* style for default tab selection */
+#all-tab-content { 
 	display: block;
 }
 
