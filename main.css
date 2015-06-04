@@ -6,6 +6,11 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	min-width: 1000px;
+}
+
+a {
+	text-decoration: none;
 }
 
 .container {
@@ -18,12 +23,9 @@ body {
 }
 
 .left-col {
-	background-color: #F5F5F5;
-	position: relative;
-	display: inline-block;
 	width: 20%;
 	vertical-align: top;
-	border-right: 1px solid lightgrey;
+	border-right: 1px solid #D3D3D3;
 	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
   	page-break-inside: avoid; /* Firefox */
    	break-inside: avoid; /* IE 10+ */
@@ -32,27 +34,36 @@ body {
 }
 
 .mid-col {
-	position: relative;
-	display: inline-block;
 	width: 75%;
 }
 
 .right-col {
-	background-color: #F5F5F5;
 	width: 5%;
 }
 
+.left-col, .right-col {
+	background-color: #F5F5F5;
+}
+
+
+/****************************************/
+/********** Left column styles **********/
+/****************************************/
+
 .title {
 	color: darkgray;
-	text-align: center;
-	background-color: lightgrey;
+	background-color: #D3D3D3;
 	height: 30px;
 	padding: 18px 0 12px 0;
 	margin-top: 0;
 	margin-bottom: -2px;
 }
 
-.tab-area {
+.title, .bot-option {
+	text-align: center;
+}
+
+.tab-area, .greeting, .tabs {
 	background-color: #F5F5F5;
 }
 
@@ -61,7 +72,6 @@ body {
 	height: 55px;
 	display: inline-block;
 	font-weight: bold;
-	background-color: #F5F5F5;
 	border-bottom: 1px solid lightgray;
 	padding-top: 5px;
 }
@@ -71,24 +81,31 @@ body {
 	padding: 5px 30px 5px 15px;
 }
 
-.tabs {
-	background-color: #F5F5F5;
-}
-
 .links {
+	margin: 0 0 50px 0;
 	list-style-type: none;
-	margin-left:0px;
 	padding-left:0px;
 	display: inline-block;
+	width: 100%;
+	overflow: auto;
+}
+
+.links, .dropdown-menu li {
+	list-style-type: none;
 }
 
 .links li {
-	padding: 5px 15px 10px 15px;
+	padding: 10px 15px 10px 15px;
+}
+
+.links li:hover {
+	background-color: #D3D3D3;
 }
 
 .links a {
 	text-decoration: none;
 	color: black;
+	width: 100%;
 }
 
 .links img {
@@ -97,9 +114,150 @@ body {
 }
 
 .links p {
-	text-align: right; 
-	display:inline-block;
 	padding: 0;
 }
 
+.links button {
+	float: right;
+	background-color: #FFA500;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 3px;
+}
 
+
+/******************************************/
+/********** Middle column styles **********/
+/******************************************/
+
+.mid-col {
+	padding: 0 20px 0 20px;
+}
+
+.mid-col h4 {
+	margin-bottom: 50px;
+}
+
+.tasks {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid #D3D3D3;
+	height: 30px;
+}
+
+.tasks a {
+	display: inline-block;
+	color: black;
+	font-weight: bold;
+	margin-right: 50px;
+	height: 29px;
+}
+
+.tasks a:hover, #default, .tasks a:active {
+	border-bottom: 2px solid #FFA500;
+	color: #FFA500;
+}
+
+#default button, .tasks a:hover button{
+	color: #FFA500;
+}
+
+.tasks a {
+	padding: 0 10px 0 10px;
+}
+
+.tasks button {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.table {
+	margin: 30px 0 0 30px;
+	padding-right: 30px;
+	width: 100%;
+}
+
+.table a {
+	color: #089DE3;
+}
+
+.table button, .dropdown-menu {
+	background-color: #089DE3;
+}
+
+.table button {
+	float: right;
+	color: #FFFFFF;
+	font-weight: bold;
+	border: none;
+	height: 30px;
+	margin-left: 1px;
+}
+
+.btns {
+	width: 145px;
+}
+
+.table button:hover {
+	cursor: pointer;
+}
+
+.table .arrow {
+	width: 40px;
+	font-size: 8px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.table .details {
+	width: 100px;
+	font-size: 14px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.table tr {
+	height: 50px;
+}
+
+/****** start dropdown styles ******/
+.dropdown-menu {
+	width: 70px;
+	height: 55px;
+	border: 1px solid #FFFFFF;
+	border-radius: 3px;
+	padding: 0 0 0 5px;
+	position: absolute;
+	margin: 31px 0 0 69px;
+}
+
+.dropdown-menu li {
+	width: 100%;
+	margin: 0;
+	padding-top: 5px;
+	display: block;
+}
+
+.dropdown-menu a {
+	color: #FFFFFF;
+}
+
+.dropdown {
+	visibility: hidden;
+}
+/****** end dropdown styles ******/
+
+.bot-option {
+	width: 95%;
+	height: 40px;
+	border: 1px solid #D3D3D3;
+	border-radius: 3px;
+	margin: 10px auto;
+	color: #089DE3;
+}
+
+.bot-option a {
+	line-height: 40px;	
+	color: #089DE3;
+	font-weight: bold;
+}

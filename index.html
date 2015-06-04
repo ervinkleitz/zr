@@ -7,14 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
+
 	<div class="container">
+	
+		<!-- start left column -->
 		<div class="left-col">
-			<h4 class="title">App3</h4><!--
-		 --><div class="tab-area">
+			<h4 class="title">App3</h4>
+		 	<div class="tab-area">
 				<section class="greeting">
 					<img src="http://placehold.it/30x40">
 					<p>Hi User!</p>
 				</section>
+				<!-- start tab section -->
 				<section class="tabs">
 					<div>
 						<ul class="links">
@@ -26,31 +30,95 @@
 					</div>
 					<div>
 						<ul class="links">
-							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Business</a></li>
+							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Business</a><button>13</button></li>
 							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Contacts</a></li>
 							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Reports</a></li>
 							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Manage</a></li>
 						</ul>
 					</div>
-					<ul class="links">
-						<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Quick Links</a></li>
-						<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Support</a></li>
-					</ul>
+					<div class="tabs-div">
+						<ul class="links">
+							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Quick Links</a></li>
+							<li><a href="#"><img src="http://dummyimage.com/20x20/c2c2c2">Support</a></li>
+						</ul>
+					</div>
 				</section>
+				<!-- end tab section -->
 			</div>
 		</div>
-
+		<!-- end left column -->
+		
+		<!-- start mid column -->
 		<div class="mid-col">
 			<h3>Dashboard</h3>
-			<h5>Tasks</h5>
-			<span>All<button>13</button> Requests Personal</span>
-			12/28/06 <button>View Details</button><button>Arrow</button>
+			<h4>Tasks</h4>
+			<!-- nav -->
+			<nav class="tasks">
+				<a href="#" id="default">All<button>13</button></a>
+				<a href="#">Requests<button>13</button></a> 
+				<a href="#">Personal<button>0</button></a>
+			</nav>
+			<!-- nav -->
+			<div id="mid-col-content">
+				<table class="table">
+					<tr>
+						<td class="date">12/28/06</td>
+						<td class="description">Request for Info from <a href="#">Michael Harris</a></td>
+						<td class="btns">
+							<button class="arrow" id="more1">&#9660;</button>
+							<div class="dropdown" id="drop1">
+								<ul class="dropdown-menu">
+									<li><a href="#">Call</a></li>
+									<li><a href="#">Email</a></li>
+								</ul>
+							</div>
+							<button class="details">View Details</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="date">12/28/06</td>
+						<td class="description">Request for Info from <a href="#">Henry Helpdesk Ticket</a></td>
+						<td class="btns">
+							<button class="arrow" id="more2">&#9660;</button>
+							<div class="dropdown" id="drop2">
+								<ul class="dropdown-menu">
+									<li><a href="#">Call</a></li>
+									<li><a href="#">Email</a></li>
+								</ul>
+							</div>
+							<button class="details">View Details</button>
+						</td>
+					</tr>
+					<tr>
+						<td class="date">01/02/07</td>
+						<td class="description">Request for Info from <a href="#">Frank Woolf</a></td>
+						<td class="btns">
+							<button class="arrow" id="more3">&#9660;</button>
+							<div class="dropdown" id="drop3">
+								<ul class="dropdown-menu">
+									<li><a href="#">Call</a></li>
+									<li><a href="#">Email</a></li>
+								</ul>
+							</div>
+							<button class="details">View Details</button>
+						</td>
+					</tr>
+				</table>
+				<div class="bot-option"><a href="">View All Tasks &rarr;</a></div>	
+			</div>
 		</div>
-
+		<!-- end mid column -->
+		
+		<!-- start right column -->
 		<div class="right-col">
-			
+			<!--empty-->
 		</div>
+		<!-- end right column -->
+		
 	</div>
-	<!-- Angular, UI Bootstrap, and other scripts -->
+	
+	<!-- scripts -->
+	<script type="text/javascript" src="script.js"></script>
+	
 </body>
 </html>
